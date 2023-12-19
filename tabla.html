@@ -7,6 +7,7 @@
   <title>Cupones y Códigos de Descuento</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="css/style-index.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <style type="text/css">
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,7 +21,7 @@
     }
 
     .contenedor {
-	width: 80%;
+	width: 90%;
 	margin: 20px auto;
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -45,7 +46,7 @@
       font-size: xx-large;
       font-weight: bold;
       color: #FFF;
-      background-color: #003333;
+      background-color: #075d5d;
       padding: 15px 0;
     }
 
@@ -54,7 +55,7 @@
       border-collapse: collapse;
     }
     main {
-      font-size: 1.5rem;
+      font-size: 2.0rem;
     }
 
 
@@ -95,8 +96,8 @@
     }
 
     .contenedor-tabla {
-      float: right;
-      margin-right: 20px; /* Ajusta el margen derecho según tus preferencias */
+      width:80%;
+      margin: 0 auto;
     }
 
     .tabla-izquierda {
@@ -110,7 +111,9 @@
       text-align: center; /* Alinea el contenido al centro */
       font-size: 18px;
     }
-
+    .tablita{
+      width: 100%;
+    }
     /* Estilo para las imágenes en las filas de la tabla */
     .imagen-producto {
       max-width: 100px;
@@ -119,7 +122,15 @@
   .Na {
 	color: #060;
 	font-weight: bold;
-}
+  font-size: 34px;
+  }
+  .piecito-pag{
+    font-size: 18px;
+    font-weight: bold;
+    color: #060;
+    text-align: center;
+
+  }
   </style>
 </head>
 <body>
@@ -137,16 +148,12 @@
     </nav>
   <div class="contenedor">
     <main>
-      <h1 align="center" class="Titulo">Cupones y Códigos de Descuento    </h1>
-    <p>&ldquo;Produce una inmensa tristeza pensar que la naturaleza habla mientras el género humano no la escucha&rdquo;</p>
-    Víctor Hugo
-    <p>&nbsp;</p>
+      <h1 align="center" class="Titulo">Canjeador de Puntos</h1>
     </main>
-    <p align="center">&nbsp;</p>
     <div class="contenedor-tabla">
-      <table width="103%" border="1">
+      <table border="2">
         <tr>
-          <td class="TablaTitulo" colspan="3">Canjear Puntos</td>
+          <td class="TablaTitulo" colspan="3">Tablero de Premios</td>
         </tr>
         <tr>
           <td><span class="letrastabla">Hipermaxi</span></td>
@@ -154,7 +161,7 @@
             <p><span class="resaltado-verde">500 Puntos</span></p>
             <p><span class="letrast2">Vale por 10bs</span></p>
           </td>
-          <td><button class="boton-canjear">Canjear</button></td>
+          <td><button class="boton-canjear" onclick="canjear(500)">Canjear</button></td>
         </tr>
         <tr>
           <td><span class="letrastabla">SuperJumpPark</span></td>
@@ -162,7 +169,7 @@
             <p><span class="resaltado-verde">1250 Puntos</span></p>
             <p><span class="letrast2">Medias Antideslizantes</span></p>
           </td>
-          <td><button class="boton-canjear">Canjear</button></td>
+          <td><button class="boton-canjear" onclick="canjear(1250)">Canjear</button></td>
         </tr>
         <tr>
           <td><span class="letrastabla">Makro</span></td>
@@ -170,7 +177,7 @@
             <p><span class="resaltado-verde">1000 Puntos</span></p>
             <p><span class="letrast2">Código del 15% de descuento</span></p>
           </td>
-          <td><button class="boton-canjear">Canjear</button></td>
+          <td><button class="boton-canjear" onclick="canjear(1000)">Canjear</button></td>
         </tr>
         <tr>
           <td><span class="letrastabla">Tienda Amiga</span></td>
@@ -178,7 +185,7 @@
             <p><span class="resaltado-verde">785 Puntos</span></p>
             <p><span class="letrast2">Código de 10% de descuento</span></p>
           </td>
-          <td><button class="boton-canjear">Canjear</button></td>
+          <td><button class="boton-canjear" onclick="canjear(785)">Canjear</button></td>
         </tr>
         <tr>
           <td><span class="letrastabla">UFC Gym</span></td>
@@ -186,32 +193,27 @@
             <p><span class="resaltado-verde">1500 Puntos</span></p>
             <p><span class="letrast2">20% de descuento Inscripción</span></p>
           </td>
-          <td><button class="boton-canjear">Canjear</button></td>
+          <td><button class="boton-canjear" onclick="canjear(1500)">Canjear</button></td>
         </tr>
       </table>
     </div>
-    <p>&nbsp;</p>
-    <h3>&ldquo;La naturaleza no es un lugar para visitar. Es el hogar&rdquo;</h3>
-    <p><em>Gary Sherman Snyder, poeta y activista estadounidense.</em></p>
-    <p><img src="img/image02.jpg" width="241" height="236" alt="ImaEcologico"></p>
-    <p><strong>Reciclar</strong> convierte cosas en otras cosas, lo cual casi es magia.    </p>
-    <p><img src="img/image01.jpg" width="478" height="305" alt="image"></p>
-    <p>&nbsp;</p>
+    <p class="piecito-pag">* Recuerde que cada kilo reciclado equivale a 100 puntos </p>
     <p>&nbsp;</p>
     <table>
       <tr>
-        <td bgcolor="#006600">Puntos Totales Recolectados</td>
+        <td bgcolor="#006600" >Puntos Totales Recolectados</td>
       </tr>
       <tr>
-        <td bgcolor="#66CC33">2565</td>
+        <td bgcolor="#66CC33" id="puntos">3000</td>
       </tr>
     </table>
     <div class="nuevo-div">
       <p class="Na">Beneficios de Reciclaje </p>
       <p>&nbsp;</p>
-      <iframe width="1236" height="695" src="https://www.youtube.com/embed/5q2HSdgO7CA" title="BENEFICIOS DEL RECICLAJE ♻️  ¿Qué es el reciclaje?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br/>
+      <iframe width="800" height="450" src="https://www.youtube.com/embed/5q2HSdgO7CA" title="BENEFICIOS DEL RECICLAJE ¿Qué es el reciclaje?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br/>
     </div>
 </div>
+<script src="js/canjeo.js"></script>
 </body>
 </html>
 

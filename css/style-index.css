@@ -89,3 +89,6 @@ header button img{
 header button:hover img{ 
     display: block;
 }
+.mas-info-btn:hover{
+    width: 160px;
+}
