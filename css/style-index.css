@@ -21,7 +21,7 @@ body{
 }
 .logo{
     font-weight:600;
-    font-size: 3.8rem;
+    font-size: 4.0rem;
     color: aliceblue;
 }
 nav{
@@ -30,13 +30,14 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 20px 10px;
+    
 }
 ul li{
     display: inline-block;
     list-style: none;
     padding: 6px 30px;
    font-weight: 500;
-   font-size: 2.3rem;
+   font-size: 2.5rem;
    transition:all 0.7s ease 0s;
    cursor: pointer;
    color: aliceblue;
@@ -68,7 +69,7 @@ header h2{
 header p{ 
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
 }
 header button{ 
     padding: 0 5px;
