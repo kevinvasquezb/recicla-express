@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    font-weight:600;
+    font-size: 2.3rem;
+    color: aliceblue;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 6px 30px;
+   font-weight: 500;
+   font-size: 1.6rem;
+   transition:all 0.7s ease 0s;
+   cursor: pointer;
+   color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: white
+}
+ul li:hover{
+  border-radius: 20px;
+  background-color: rgb(41, 189, 41);
+  color: white;
+}
+
+body {
+    background-image: url("../img/post-dudas-economia-ecologica.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #454242;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    background-color: #fafafa;
+    height: 700px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 25px;
+}
+
+
+form { 
+    padding: 30px 80px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+label{
+    font-size: 15px;
+    color: #050505;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.submit {
+    background-color: #2EA036;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 250px;
+    margin-top: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+h2 {
+    font-size: 45px;
+    color:#2EA036;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+h1 {
+    font-size: 20px;
+    color: #2EA036;
+    font-weight: 10;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size: 20px;
+    color: hsl(0, 0%, 1%);
+    font-weight: 10;
+    margin-bottom: 10px;
+}
+
+
+
+
+.img-1{
+    width: 450px;
+    margin-bottom: 175px;
+    margin-top: 160px;
+    border-radius: 25px;
+}
+
+

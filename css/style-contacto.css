@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url("../img/tierra.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    height: 93vh;
+    width: 100%;;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}  
+.logo{
+    font-weight:600;
+    font-size: 3.8rem;
+    color: aliceblue;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 6px 30px;
+   font-weight: 500;
+   font-size: 2.3rem;
+   transition:all 0.7s ease 0s;
+   cursor: pointer;
+   color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: white
+}
+ul li:hover{
+  border-radius: 20px;
+  background-color: rgb(41, 189, 41);
+  color: white;
+}
+head{
+    background-color: darkgreen;
+}
+header{
+    position: absolute;
+    bottom: 13%;
+    padding: 0 50px;
+    color: aliceblue;
+}
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+header p{ 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+.container-form p{
+    margin-bottom: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 700;
+}
+.container-form a i{
+    margin-right: 10px;
+    color: orange;
+}
+.container-form form .campo, textarea{
+    padding: 15px 10px;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}    
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .button-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: white;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .button-enviar:hover{
+    background: #e39403;
+    color: white;
+}
+.container .fondo{ 
+    position: absolute;
+    height: 250px;
+    width: 50px;
+    right: 7%;
+    bottom: 1px;
+    z-index: 99;
+}
+.container .banner{ 
+    position: fixed;
+    height: 350px;
+    width: 550px;
+    right: 0%;
+    bottom: 5px;
+    z-index: 100;
+}

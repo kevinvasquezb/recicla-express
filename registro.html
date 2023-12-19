@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla Express-Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style-login.css">
+    
+</head>
+<body>
+    <div class="contaainer-op">
+        <nav>
+            <p class="logo">RECICLA EXPRESS</p>
+            <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="mapa-01.html">Mapa</a></li>
+               <li><a href="tabla.html">Tabla de Premios</a></li>
+               <li><a href="formulario.html">Formulario</a></li>
+               <li><a href="contacto.html">Contacto</a></li>
+               <li><a href="login.html">Login</a></li>
+           </ul>
+        </nav>
+        <main>
+            <form class="font-login" id="form">
+    
+                <h2>Registro</h2>
+                <div class="input-group">
+                    <div class="input-container">
+                        <input type="email" placeholder="Correo" id="email">
+                        <img class="input-icon" src="img/correo.png"width="40px" height="40px">
+                    </div>
+                    <div class="input-container">
+                        <input type="password" placeholder="Contraseña" id="password">
+                        <img class="input-icon" src="img/contraseña.png"width="40px" height="40px">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Nombre" id="name">
+                        <img class="input-icon" src="img/usuario.png"width="40px" height="40px">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Apellido" id="lastname">
+                        <img class="input-icon" src="img/usuario.png"width="40px" height="40px">
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="tel" placeholder="Teléfono" id="phone">
+                        <img class="input-icon" src="img/telefono.png"width="40px" height="40px">
+                    </div>
+                
+                <div>
+                    <p>Tipo</p>
+                 <label for="tipo"></label>
+                 
+                 <select id="Tipo" name="tipo" >
+                 <option > Usuario</option>
+                 <option > Recolector</option>
+                </select>
+        
+                </div>
+                    
+                
+        
+                    <a href="login.html"> Ya tienes cuenta? iniciar sesion</a>
+                    <a href="index.html"><button class="btn"  id="boton_p">Enviar</button></a>
+                    <p class="warnings" id="warnings"></p>
+                  
+                </div>
+                
+                
+                 
+                <div class="input-container">
+                    
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="js/registro.js"></script>
+</body>
+</html>

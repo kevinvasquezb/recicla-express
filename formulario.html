@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <title>Recicla Express-Formulario</title>
+    <link rel="stylesheet" href="css/style-formulario.css">
+</head>
+ <body>
+    <div class="container01"> 
+        <nav>
+            <p class="logo">RECICLA EXPRESS</p>
+            <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="mapa-01.html">Mapa</a></li>
+               <li><a href="tabla.html">Premios</a></li>
+               <li><a href="formulario.html">Formulario</a></li>
+               <li><a href="perfil.html">Perfil</a></li>
+               <li><a href="login.html">Login</a></li>
+           </ul>
+        </nav>
+ </div>
+    <main>
+        <div class="container">
+
+            <form class="from">
+    
+                <h2>Formulario de recoleccion</h2>
+                <h3>_______________________________________________________________________________</h3>
+        
+             <input id="Papel" type="checkbox" name="residuos" value="Papel">
+             <label for="Papel">Papel </label>
+    
+             <input id="Plastico" type="checkbox" name="residuos" value="Plastico">
+             <label for="Plastico">Plastico </label>
+    
+             <input id="Residuos de aparatos electronicos" type="checkbox" name="residuos" value="Residuos de aparatos electronicos">
+             <label for="Residuos de aparatos electronicos">Residuos electronicos </label>
+    
+             <input id="carton" type="checkbox" name="residuos" value="carton">
+             <label for="carton">Carton </label>
+             <hr></hr>
+    
+            
+             <input id="foto" type="file" name="foto"> 
+             <label for="foto">"Haz clic aqui para enviar foto"</label>
+           
+             
+             <hr></hr>
+             
+             <div >
+    
+             <label for="contenedor">Seleccione en que contenedor dejara sus residuo</label>
+             <select id="contenedor" name="contenedor" >
+             <option > Cine Center</option>
+             <option > Ventura</option>
+             <option > Makro parque</option>
+             <option > Hipermaxi las palmas</option>
+             <option > Villa olimpica</option>
+             <option > Terminal bimodal</option>
+             <option > Parque urbano</option>
+             <option > Plaza 24 de Septitnbre</option>
+             <option > UAGRM</option>
+             <option > Infocal</option>
+             </select>
+             <hr></hr>
+             <label for="peso">Peso aproximado de sus residuos</label>
+             <select id="peso" name="peso" >
+             <option > 1kg</option>
+             <option > 2kg</option>
+             <option > 3kg</option>
+             <option > 4kg</option>
+             <option > 5kg</option>
+             <option > 6kg</option>
+             <option > 7kg</option>
+             <option > 8kg</option>
+             <option > 9kg</option>
+             <option > 10kg</option>
+             </select>
+            </div>
+            <hr></hr>
+             <h1>Si sus residuos pesan mas de 10kg, manda un mensaje al +591 77699277</h1>
+    
+    
+             <input class="submit" type="submit" value="Enviar">
+             
+            </form>
+            <div class="info">
+                <img src="img/mapa gps.png" class="img-1" alt="">
+             </div>
+       </div>
+    </main>
+ </body>
+</html>
