@@ -16,7 +16,7 @@ function loguear() {
 
     if (email == "admin@gmail.com" && password == "1234") {
         swal("Bienvenido", "Has iniciado sesión correctamente", "success");
-        setInterval(function(){window.location.href = "../index.html";}, 20000000000);
+        setInterval(function(){window.location.href = "index.html";}, 20000000000);
     } else {
         alert("Usuario o contraseña incorrecta");
     }
