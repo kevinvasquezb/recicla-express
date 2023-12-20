@@ -103,10 +103,16 @@ input {
     color: #000000;
 }
 .btn {
-    background-color: #28CE2F;
-    border: 2px solid #2dbd34;
+    padding: 15px 25px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: all 0.3s ease 0s;
 }
 
 .btn:hover {
@@ -161,4 +167,15 @@ main{
     width:30%;
     padding-inline: 10px;
     margin: auto;
+}
+.input-icon{
+    position: absolute;
+    width: 35px;
+    height: 40px;
+    top: 35%;
+    left: 0%;
+    transform: translateY(-50%);
+    right: 15px;
+    color: #000000;
+    cursor: pointer;
 }

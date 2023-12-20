@@ -48,7 +48,7 @@ ul li{
 }
 a{
     text-decoration: none;
-    color: white
+    color: rgb(0, 0, 0)
 }
 ul li:hover{
   border-radius: 20px;
@@ -99,47 +99,59 @@ input {
     position: relative;
 
 }
-::placeholder {
-    color: #000000;
-}
-.btn {
-    background-color: #28CE2F;
-    border: 2px solid #2dbd34;
-    cursor: pointer;
+input:focus {
+    border: 2px solid #2EA036;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.tipo-div p{
+    margin-right: 10px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+#Tipo{
+    width: 80%;
+    height: 35px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    margin-bottom: 30px;
+    outline: none;
+    color: #000000;
+    font-size: 16px;
+    position: relative;
+}
+
+.btn {
+    padding: 15px 25px;
+    width: 80%;
+    border-radius: 25px;
+    background-color: #2EA036;
+    border: 2px solid #2EA036;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
 .btn:hover {
-    background-color: #2EA036;
+    background-color: #efebeb;
+    color: #2EA036;
     border: 2px solid #2EA036;
 }
-.login {
-   margin: 0 auto;
-}
+
 
 .input-container {
     position: relative;
+    
 }
- form a {
-    display: block;
-    color: #040404;
-    font-size: 17px;
-    text-decoration: none;
-    margin-bottom: 35px;
- }
-.form-registro{
-    background-color: #ffffff;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    width: 550px;
-    border-radius: 25px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin-top: 160px;
-}
+
 
 main{
     font-size: 30px;
@@ -151,14 +163,32 @@ main{
 }
 
 .warnings{
-    width:200px;
+    width:400px;
     text-align: center;
     margin: auto;
     color:#ff0808;
     padding-top: 20px;
 }
 .font-login{
-    width:30%;
+    width:50%;
     padding-inline: 10px;
     margin: auto;
+}
+.tip-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+.input-icon{
+    position: absolute;
+    width: 35px;
+    height: 40px;
+    top: 35%;
+    left: 3%;
+    transform: translateY(-50%);
+    right: 15px;
+    color: #000000;
+    cursor: pointer;
 }
